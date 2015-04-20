@@ -1,0 +1,13 @@
+{
+    "main": "https://console.scaleway.com/",
+    "name": "Scaleway",
+    "version": "0.1.0",
+    "nodejs": false,
+    "window": {
+        "width": 800,
+        "height": 600,
+        "title": "Scaleway",
+        "icon": "icon.png",
+        "toolbar": false
+    }
+}

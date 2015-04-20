@@ -1,0 +1,25 @@
+{
+  "name": "scaleway-desktop-app",
+  "version": "0.1.0",
+  "description": "Scaleway Desktop Application (scaleway.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moul/scaleway-desktop-app"
+  },
+  "keywords": [
+    "scaleway",
+    "scaleway.com",
+    "desktop",
+    "application",
+    "desktop-app"
+  ],
+  "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moul/scaleway-desktop-app/issues"
+  },
+  "homepage": "https://github.com/moul/scaleway-desktop-app",
+  "dependencies": {
+    "node-webkit-builder": "^1.0.11"
+  }
+}
