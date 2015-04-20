@@ -2,9 +2,13 @@ var NwBuilder = require('node-webkit-builder');
 
 var nw = new NwBuilder({
   files: './src/**',
-  platforms: ['osx'],
-  macIcns: './src/icon.icns',
-  macZip: true
+  platforms: ['osx64'],
+  macIcns: './assets/Scaleway.icns',
+  macZip: true,
+  macPlist: {
+    NSHumanReadableCopyright: 'Copyright © 2015 github.com/moul',
+    CFBundleIdendifier: 'com.github.moul.scaleway-desktop-app'
+  }
 });
 
 nw.on('log', console.log);
