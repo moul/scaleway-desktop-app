@@ -1,5 +1,5 @@
 {
-    "main": "https://console.scaleway.com/",
+    "main": "https://cloud.scaleway.com/",
     "name": "Scaleway",
     "version": "0.1.0",
     "nodejs": false,
