@@ -1,11 +1,10 @@
 {
-    "main": "https://cloud.scaleway.com/",
+    "main": "app.html",
     "name": "Scaleway",
     "version": "0.1.0",
-    "nodejs": false,
     "window": {
-        "width": 800,
-        "height": 600,
+        "width": 1024,
+        "height": 768,
         "title": "Scaleway",
         "icon": "icon.png",
         "toolbar": false
