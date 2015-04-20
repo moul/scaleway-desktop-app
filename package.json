@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Scaleway Desktop Application (scaleway.com)",
   "scripts": {
-    "build": "node ./build.js && appdmg assets/dmg.json build/Scaleway.dmg"
+    "build": "node ./build.js && rm -f build/Scaleway.dmg && appdmg assets/dmg.json build/Scaleway.dmg"
   },
   "Repository": {
     "type": "git",
