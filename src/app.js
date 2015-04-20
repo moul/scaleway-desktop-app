@@ -36,3 +36,21 @@ win.on('close', function(quit) {
     win.hide();
   }
 });
+
+
+// Listen for DOM load
+window.onload = function() {
+  var app = document.getElementById('app');
+  var titleRegExp = /\((\d)\)/;
+
+  // Watch the iframe every 250ms
+  setInterval(function() {
+    // Sync the title
+    document.title = app.contentDocument.title;
+
+    // Update the badge
+    var match = titleRegExp.exec(document.title);
+    var label = match && match[1] || '';
+    win.setBadgeLabel(label);
+  }, 250);
+};
