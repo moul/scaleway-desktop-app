@@ -2,7 +2,10 @@
   "name": "scaleway-desktop-app",
   "version": "0.1.0",
   "description": "Scaleway Desktop Application (scaleway.com)",
-  "repository": {
+  "scripts": {
+    "build": "node ./build.js && appdmg assets/dmg.json build/Scaleway.dmg"
+  },
+  "Repository": {
     "type": "git",
     "url": "https://github.com/moul/scaleway-desktop-app"
   },
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/moul/scaleway-desktop-app",
   "dependencies": {
+    "appdmg": "^0.3.1",
     "node-webkit-builder": "^1.0.11"
   }
 }
