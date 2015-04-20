@@ -1,7 +1,7 @@
 {
     "main": "app.html",
     "name": "Scaleway",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "window": {
         "width": 1024,
         "height": 768,
