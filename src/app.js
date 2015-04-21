@@ -54,3 +54,23 @@ window.onload = function() {
     win.setBadgeLabel(label);
   }, 250);
 };
+
+
+// Manage cookies
+win.cookies.onChanged.addListener(function(change) {
+  console.log(change);
+  var cookie = change.cookie;
+  if (change.cause == 'overwrite' &&
+      cookie.name == 'global' &&
+      cookie.domain == 'cloud.scaleway.com' &&
+      cookie.session == true) {
+    console.log('COUCOU', cookie);
+    win.cookies.remove({url: 'https://cloud.scaleway.com', name: 'global'});
+
+    cookie.session = false;
+    cookie.expirationDate = 9999999999;
+    cookie.domain = null;
+    cookie.url = 'https://cloud.scaleway.com';
+    win.cookies.set(cookie);
+  }
+});
